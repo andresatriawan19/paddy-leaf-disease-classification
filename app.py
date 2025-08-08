@@ -125,7 +125,7 @@ if uploaded_file is not None:
     st.markdown("### 🧠 Hasil Prediksi")
     st.success(f"**Jenis Penyakit: {predicted_label}**")
     st.markdown("#### 🔍 Tingkat Keyakinan Model")
-    st.progress(confidence_score / 100)
+    st.progress(float(confidence_score) / 100)
     st.markdown(f"<p style='text-align:center;font-size:20px;'><strong>{confidence_score:.2f}%</strong></p>", unsafe_allow_html=True)
 
     # Saran Penanganan
@@ -139,3 +139,4 @@ st.markdown(
     "<p style='text-align: center; font-size: 13px;'>© 2025 | Aplikasi Deteksi Penyakit Daun Padi • MobileNetV2 | Dibuat untuk membantu petani Indonesia</p>",
     unsafe_allow_html=True
 )
+
