@@ -3,3 +3,6 @@ tensorflow
 numpy
 pillow
 scikit-learn
+matplotlib
+pandas
+
