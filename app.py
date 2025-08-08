@@ -25,53 +25,53 @@ class_labels = [
     "Tungro"
 ]
 
-# --- Saran Penanganan ---
+# --- Saran Penanganan Detail ---
 treatment_suggestions = {
     "Bacterial Leaf Blight": """
 **Bacterial Leaf Blight (Hawar Daun Bakteri)**  
-🟢 *Gejala:* bercak kekuningan memanjang dari ujung dan tepi daun.  
-🛠 **Penanganan:**
-- Gunakan varietas tahan (Inpari 32, Ciherang Sub 1, IR64 BLB)
-- Hindari pupuk nitrogen berlebih
-- Rotasi tanaman
-- Jaga kebersihan lahan dan irigasi
-- Semprot bakterisida (streptomisin / kasugamisin) bila parah
+🟢 *Gejala:* bercak kekuningan memanjang dari ujung dan tepi daun, sering menyebabkan pengeringan daun.  
+🛠 **Tindakan Penanganan:**
+- Gunakan varietas padi tahan hawar seperti Inpari 32, Ciherang Sub 1, atau IR64 BLB.
+- Hindari penggunaan pupuk nitrogen secara berlebihan karena dapat memperparah penyakit.
+- Lakukan rotasi tanaman untuk memutus siklus bakteri.
+- Jaga kebersihan lahan dan saluran irigasi, hindari genangan air.
+- Semprotkan bakterisida berbahan aktif streptomisin atau kasugamisin bila serangan berat.
 """,
     "Brown Spot": """
 **Brown Spot (Bercak Coklat)**  
-🟠 *Gejala:* bercak bulat kecil coklat pada daun, batang, dan malai.  
-🛠 **Penanganan:**
-- Gunakan benih sehat (Inpari 33)
-- Perbaiki drainase
-- Semprot fungisida (mankozeb, trifloksistrobin + tebukonazol)
-- Tambahkan kalium & fosfor
-- Bersihkan sisa jerami terinfeksi
+🟠 *Gejala:* bercak bulat kecil berwarna coklat pada daun, batang, dan malai.  
+🛠 **Tindakan Penanganan:**
+- Gunakan benih sehat dan tahan penyakit seperti varietas Inpari 33.
+- Perbaiki drainase sawah agar air tidak menggenang.
+- Semprot fungisida berbahan aktif mankozeb atau trifloksistrobin + tebukonazol.
+- Tambahkan pemupukan kalium dan fosfor untuk memperkuat ketahanan tanaman.
+- Lakukan sanitasi lahan dari sisa-sisa jerami terinfeksi.
 """,
     "Healthy": """
 **Daun Sehat**  
 🟩 *Tidak ada gejala penyakit.*  
 ✅ **Rekomendasi:**
-- Pertahankan pola tanam dan pemupukan berimbang
-- Cek daun berkala
-- Jaga kebersihan area sawah
+- Pertahankan pola tanam yang baik dan pemupukan berimbang.
+- Cek daun secara berkala agar deteksi dini tetap dapat dilakukan.
+- Jaga kebersihan area persawahan untuk mencegah munculnya penyakit baru.
 """,
     "Narrow Brown Spot": """
 **Narrow Brown Spot (Bercak Coklat Sempit)**  
-🟡 *Gejala:* bercak sempit & panjang coklat gelap sejajar tulang daun.  
-🛠 **Penanganan:**
-- Gunakan varietas tahan (Inpari 42)
-- Pupuk nitrogen secukupnya
-- Semprot fungisida (propikonazol / azoksistrobin)
-- Perbaiki pengairan
+🟡 *Gejala:* bercak sempit dan panjang berwarna coklat gelap sejajar dengan tulang daun.  
+🛠 **Tindakan Penanganan:**
+- Gunakan varietas tahan seperti Inpari 42.
+- Lakukan pemupukan nitrogen secukupnya, tidak berlebihan.
+- Semprot fungisida seperti propikonazol atau azoksistrobin jika gejala meluas.
+- Perbaiki sistem pengairan dan jangan biarkan tanaman terlalu lembab.
 """,
     "Tungro": """
-**Tungro (Virus oleh Wereng Hijau)**  
-🔴 *Gejala:* daun kuning-oranye, tanaman kerdil.  
-🛠 **Penanganan:**
-- Gunakan varietas tahan (Inpari 36 / Inpari 19)
-- Kendalikan wereng (imidakloprid / fipronil)
-- Tanam serempak
-- Cabut tanaman terinfeksi berat
+**Tungro (Virus yang Ditransmisikan Wereng Hijau)**  
+🔴 *Gejala:* daun menjadi kuning-oranye, tanaman kerdil dan pertumbuhan terhambat.  
+🛠 **Tindakan Penanganan:**
+- Gunakan varietas tahan seperti Inpari 36 atau Inpari 19.
+- Kendalikan vektor (wereng hijau) dengan insektisida berbahan imidakloprid atau fipronil.
+- Lakukan tanam serempak agar populasi wereng tidak berpindah ke tanaman muda.
+- Cabut tanaman yang terinfeksi berat agar tidak menular ke tanaman lain.
 """
 }
 
@@ -81,18 +81,18 @@ def image_to_base64(img: Image.Image) -> str:
     img.save(buffered, format="PNG")
     return base64.b64encode(buffered.getvalue()).decode()
 
-# --- Header ---
+# --- Tampilan Header ---
 st.markdown("<h1 style='text-align: center; color: #2e7d32;'>🌾 Deteksi Penyakit Daun Padi</h1>", unsafe_allow_html=True)
 st.markdown("""
 <p style='text-align: center;'>
-Aplikasi ini menggunakan model <strong>MobileNetV2</strong> untuk mengklasifikasikan penyakit daun padi dan memberikan solusi penanganan.  
-Didesain untuk membantu petani melakukan deteksi dini di lapangan.
+Aplikasi ini menggunakan model <strong>MobileNetV2</strong> untuk mengklasifikasikan jenis penyakit pada daun padi dan memberikan solusi penanganan langsung berdasarkan gejala yang terdeteksi.  
+Ditujukan untuk membantu petani melakukan deteksi dini dan penanganan cepat di lapangan.
 </p>
 """, unsafe_allow_html=True)
 st.write("---")
 
 # --- Upload Gambar ---
-uploaded_file = st.file_uploader("📤 Unggah gambar daun padi", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("📤 Silakan unggah gambar daun padi yang ingin didiagnosis", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file).convert('RGB')
@@ -103,7 +103,7 @@ if uploaded_file is not None:
         f"""
         <div style="text-align: center;">
             <img src="data:image/png;base64,{img_base64}" width="300" style="border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
-            <p><em>Pratinjau Gambar</em></p>
+            <p><em>Pratinjau Gambar Daun Padi</em></p>
         </div>
         """,
         unsafe_allow_html=True
@@ -116,8 +116,8 @@ if uploaded_file is not None:
 
     # Prediksi
     prediction = model.predict(img_array)
-    predicted_class_index = int(np.argmax(prediction))
-    confidence_score = float(prediction[0][predicted_class_index])  # skala 0-1
+    predicted_class_index = np.argmax(prediction)
+    confidence_score = prediction[0][predicted_class_index] * 100
     predicted_label = class_labels[predicted_class_index]
 
     # Hasil Prediksi
@@ -125,8 +125,8 @@ if uploaded_file is not None:
     st.markdown("### 🧠 Hasil Prediksi")
     st.success(f"**Jenis Penyakit: {predicted_label}**")
     st.markdown("#### 🔍 Tingkat Keyakinan Model")
-    st.progress(confidence_score)  # skala 0-1
-    st.markdown(f"<p style='text-align:center;font-size:20px;'><strong>{confidence_score*100:.2f}%</strong></p>", unsafe_allow_html=True)
+    st.progress(confidence_score / 100)
+    st.markdown(f"<p style='text-align:center;font-size:20px;'><strong>{confidence_score:.2f}%</strong></p>", unsafe_allow_html=True)
 
     # Saran Penanganan
     st.write("---")
@@ -136,6 +136,6 @@ if uploaded_file is not None:
 # --- Footer ---
 st.write("---")
 st.markdown(
-    "<p style='text-align: center; font-size: 13px;'>© 2025 | Deteksi Penyakit Daun Padi • MobileNetV2 | Untuk Petani Indonesia</p>",
+    "<p style='text-align: center; font-size: 13px;'>© 2025 | Aplikasi Deteksi Penyakit Daun Padi • MobileNetV2 | Dibuat untuk membantu petani Indonesia</p>",
     unsafe_allow_html=True
 )
