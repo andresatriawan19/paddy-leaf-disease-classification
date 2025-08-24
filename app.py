@@ -29,7 +29,7 @@ class_labels = [
 treatment_suggestions = {
     "Bacterial Leaf Blight": """
 Untuk mencegah penyakit hawar daun bakteri (Bacterial Leaf Blight) pada padi, tanam varietas tahan, jaga sanitasi lahan dengan membersihkan gulma dan sisa tanaman, kelola air dengan baik, lakukan pemupukan berimbang, serta terapkan perlakuan benih dan pemantauan rutin. Jika serangan terjadi, gunakan pestisida bakterisida sesuai anjuran untuk menghentikan penyebarannya. 
-**Sumber:**
+\n\n**Sumber:**
 - [distan.bulelengkab.go.id](https://distan.bulelengkab.go.id/informasi/detail/artikel/55_penyakit-hawar-daun-bakteri-pada-tanaman-padi)
 - [eos.com](https://eos.com/blog/leaf-blight/#:~:text=Untuk%20mengendalikan%20penyakit%20hawar%20daun,juga%20dapat%20mengurangi%20keparahan%20penyakit.)
 - [pertanian.ngawikab.go.id](https://pertanian.ngawikab.go.id/2023/01/12/hama-penyakit-bakteri-pada-tanaman-padi/#:~:text=Salah%20satu%20cara%20untuk%20menangani,penyakit%20tersebut%20berkembang%20lebih%20lanjut.)
@@ -37,7 +37,7 @@ Untuk mencegah penyakit hawar daun bakteri (Bacterial Leaf Blight) pada padi, ta
 
     "Brown Spot": """
 Untuk menghindari penyakit Brown Spot (Bercak Daun Coklat) pada padi, lakukan sanitasi lahan, gunakan varietas tahan penyakit, atur jarak tanam agar tidak terlalu rapat dan gemburkan tanah, lakukan pemupukan berimbang, rendam benih dalam air panas sebelum tanam, dan kontrol kelembaban dengan pengaturan pengairan serta pengelolaan gulma, serta gunakan fungisida kontak dan sistemik sebagai tindakan pencegahan dan pengendalian jika diperlukan. 
-**Sumber:**
+\n\n**Sumber:**
 - [plantix.net](https://plantix.net/id/library/plant-diseases/100064/brown-spot-of-rice/)
 - [cybex.id](https://cybex.id/artikel/52964/penyakit-bercak-daun-coklat-brown-leaf-spot-pada-tanaman-padi--pengendaliannya/)
 - [researchgate.net](https://www.researchgate.net/publication/324778944_Kajian_Intensitas_Penyakit_Bercak_Coklat_Sempit_Cercospora_oryzae_dan_Teknik_Pengendaliannya_pada_Pertanaman_Padi_di_Kecamatan_Tanggul_Kabupaten_Jember/fulltext/5ae1dcc6a6fdcc91399fbfb4/Kajian-Intensitas-Penyakit-Bercak-Coklat-Sempit-Cercospora-oryzae-dan-Teknik-Pengendaliannya-pada-Pertanaman-Padi-di-Kecamatan-Tanggul-Kabupaten-Jember.pdf)
@@ -46,7 +46,7 @@ Untuk menghindari penyakit Brown Spot (Bercak Daun Coklat) pada padi, lakukan sa
 
     "Healthy": """
 Untuk mempertahankan daun padi yang sehat dan menghindarinya dari penyakit, Anda perlu menerapkan praktik pengelolaan yang baik, meliputi penggunaan varietas tahan penyakit, pemupukan berimbang, menjaga sanitasi lahan dari gulma dan sisa tanaman, serta melakukan penyiangan dan pengaturan air secara rutin. Selain itu, penggunaan bakterisida dan fungisida yang tepat dosisnya dapat membantu mengendalikan serangan penyakit secara kuratif. 
-**Sumber:**
+\n\n**Sumber:**
 - [petani-sejahtera.basf.co.id](https://petani-sejahtera.basf.co.id/news/Tanaman-Padi-Bebas-dari-Bakteri-dan-Jamur-Ini-Caranya#:~:text=Menggunakan%20Fungisida%20dan%20Bakterisida,untuk%20mendapatkan%20informasi%20lebih%20lanjut.)
 - [gdm.id](https://gdm.id/cara-mengatasi-daun-padi-yang-mengering-2/#:~:text=Cara%20mengatasi%20daun%20padi%20yang%20mengering%20kedua%20adalah%20dengan%20melakukan,dari%20sampah%20atau%20kotoran%20lain.)
 - [distan.bulelengkab.go.id](https://distan.bulelengkab.go.id/informasi/detail/artikel/55_penyakit-hawar-daun-bakteri-pada-tanaman-padi)
@@ -55,7 +55,7 @@ Untuk mempertahankan daun padi yang sehat dan menghindarinya dari penyakit, Anda
 
     "Narrow Brown Spot": """
 Untuk mencegah penyakit Narrow Brown Spot pada padi, gunakan varietas tahan penyakit, tanam dengan jarak yang lebih longgar, lakukan pemupukan berimbang (hindari kelebihan Urea), pastikan sanitasi lahan yang baik, dan gunakan fungisida sebagai pencegahan jika diperlukan. Kondisi kelembapan tinggi dan terlalu lama, serta penggunaan pupuk nitrogen berlebih, dapat memperburuk penyakit ini. 
-**Sumber:**
+\n\n**Sumber:**
 - [researchgate.net](https://www.researchgate.net/publication/324778944_Kajian_Intensitas_Penyakit_Bercak_Coklat_Sempit_Cercospora_oryzae_dan_Teknik_Pengendaliannya_pada_Pertanaman_Padi_di_Kecamatan_Tanggul_Kabupaten_Jember/fulltext/5ae1dcc6a6fdcc91399fbfb4/Kajian-Intensitas-Penyakit-Bercak-Coklat-Sempit-Cercospora-oryzae-dan-Teknik-Pengendaliannya-pada-Pertanaman-Padi-di-Kecamatan-Tanggul-Kabupaten-Jember.pdf)
 - [cybex.id](https://cybex.id/artikel/52964/penyakit-bercak-daun-coklat-brown-leaf-spot-pada-tanaman-padi--pengendaliannya/)
 - [gardeningknowhow.com](https://www.gardeningknowhow.com/edible/grains/rice/treating-rice-brown-leaf-spot.htm#:~:text=Mengobati%20Bercak%20Coklat%20pada%20Daun%20Padi&text=Infeksi%20ini%20terjadi%20ketika%20daun,produksi%20dan%20kualitas%20tanaman%20Anda.&text=Daftar%20untuk%20buletin%20Gardening%20Know,Cara%20Menanam%20Tomat%20yang%20Lezat%22.)
@@ -64,7 +64,7 @@ Untuk mencegah penyakit Narrow Brown Spot pada padi, gunakan varietas tahan peny
 
     "Tungro": """
 Untuk mencegah penyakit Tungro, lakukan pengendalian terpadu dengan menanam varietas padi tahan tungro, melakukan tanam serempak di hamparan luas, mengatur waktu tanam agar tidak bersamaan dengan puncak populasi wereng hijau, serta melakukan sanitasi lahan dengan memusnahkan gulma dan tanaman sakit. Selain itu, pelestarian musuh alami wereng dan penggunaan insektisida selektif pada waktu yang tepat juga dapat membantu mengendalikan vektor penyakit. 
-**Sumber:**
+\n\n**Sumber:**
 - [distan.bulelengkab.go.id](https://distan.bulelengkab.go.id/informasi/detail/artikel/cara-pengendalian-penyakit-tungro-pada-padi-36#:~:text=Beberapa%20teknologi%20pengendalian%20tungro%20yang,serempak%20dan%20penanaman%20sepanjang%20tahun.)
 - [distan.bulelengkab.go.id](https://distan.bulelengkab.go.id/informasi/detail/artikel/34_mengenal-penyakit-tungro-pada-padi-dan-cara-mengatasinya)
 - [distan.bulelengkab.go.id](https://distan.bulelengkab.go.id/informasi/detail/artikel/89_wereng-hijau-nephotettix-virescens-vektor-utama-penyakit-tungro-pada-tanaman-padi#:~:text=Pengendalian%20penyakit%20tungro%20harus%20dilakukan,peningkatan%20populasi%20walaupun%20hanya%20sedikit.)
@@ -136,5 +136,6 @@ st.markdown(
     "<p style='text-align: center; font-size: 13px;'>© 2025 | Aplikasi Deteksi Penyakit Daun Padi • MobileNetV2 | Dibuat untuk membantu petani Indonesia</p>",
     unsafe_allow_html=True
 )
+
 
 
